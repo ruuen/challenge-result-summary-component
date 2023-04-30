@@ -12,24 +12,28 @@ export default function ResultSummary() {
         "category": "Reaction",
         "score": 0,
         "icon": "",
+        "alt": "Lightning",
       },
       {
         "id": 2,
         "category": "Memory",
         "score": 0,
         "icon": "",
+        "alt": "Brain",
       },
       {
         "id": 3,
         "category": "Verbal",
         "score": 0,
         "icon": "",
+        "alt": "Speechbubble",
       },
       {
         "id": 4,
         "category": "Visual",
         "score": 0,
         "icon": "",
+        "alt": "Eyeball",
       },
     ],
   });

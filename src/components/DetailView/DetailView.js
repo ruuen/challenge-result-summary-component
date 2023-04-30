@@ -2,7 +2,9 @@ import DetailItem from "./DetailItem/DetailItem";
 
 export default function DetailView({ detailData }) {
   const categories = detailData.map((item) => {
-    return <DetailItem key={item.id} category={item.category} userScore={item.score} icon={item.icon} />;
+    return (
+      <DetailItem key={item.id} category={item.category} userScore={item.score} icon={item.icon} altText={item.alt} />
+    );
   });
 
   return (

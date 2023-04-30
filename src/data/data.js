@@ -3,7 +3,7 @@ import iconMemory from "../media/icons/icon-memory.svg";
 import iconVerbal from "../media/icons/icon-verbal.svg";
 import iconVisual from "../media/icons/icon-visual.svg";
 
-export default {
+const data = {
   "result": 76,
   "performancePercent": 65,
   "details": [
@@ -33,3 +33,5 @@ export default {
     },
   ],
 };
+
+export default data;

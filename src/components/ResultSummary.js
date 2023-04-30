@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import pageData from "../data/data";
 import DetailView from "./DetailView/DetailView";
 import OverallView from "./OverallView/OverallView";
 import "./ResultSummary.scss";
@@ -37,7 +36,10 @@ export default function ResultSummary() {
   });
 
   useEffect(() => {
-    setUserData(pageData);
+    fetch("/api/userResults")
+      .then((res) => res.json())
+      .then((data) => setUserData(data))
+      .catch((error) => console.log(error));
   }, []);
 
   return (

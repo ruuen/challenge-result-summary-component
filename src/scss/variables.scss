@@ -30,11 +30,17 @@
 $clr-white: #fff;
 $clr-black: #13183f;
 $clr-red: #ff5555;
+$gradient-redtowhite: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), #ff5555;
 $clr-blue: #1125d6;
 $clr-blue-light: #cac9ff;
 $clr-blue-vlight: #ecf2ff;
+$gradient-bluetowhite: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), #1125d6;
+$clr-navy: #303b59;
+$clr-navy-dark: #303b59;
 $clr-green: #00bb8f;
+$gradient-greentowhite: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), #00bb8f;
 $clr-yellow: #ffb21e;
+$gradient-yellowtowhite: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), #ffb21e;
 $gradient-purpletoblue: linear-gradient(180deg, #7755ff 0%, #6943ff 0.01%, #2f2ce9 100%);
 $gradient-dbluetoblue: linear-gradient(180deg, #4d21c9 0%, rgba(37, 33, 201, 0) 100%, rgba(37, 33, 201, 0) 100%);
 
@@ -45,7 +51,7 @@ $font-weight-semibold: 700;
 $font-weight-bold: 800;
 
 // Common Element Properties
-$border-radius-curved: 10px;
+$border-radius-curved: 12px;
 
 // Device Breakpoints
 $breakpoint-tablet: 700px;

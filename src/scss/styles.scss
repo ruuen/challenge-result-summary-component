@@ -1,7 +1,7 @@
 @use "variables" as var;
 
 .overall {
-  height: 45lvh;
+  height: 45dvh;
   padding: 1.5em 2em 2.5em 2em;
   background: var.$gradient-purpletoblue;
   border-radius: 0 0 30px 30px;
@@ -27,6 +27,7 @@
   &__body {
     color: var.$clr-blue-light;
     max-width: 70cqw;
+    padding: 0.25em 0 0 0;
   }
 }
 
@@ -34,7 +35,6 @@
   background: var.$gradient-dbluetoblue;
   padding: 0.5em;
   margin: 0 0 0.5em 0;
-
   min-height: 50%;
   border-radius: 50%;
   aspect-ratio: 1/1;
@@ -58,5 +58,99 @@
 }
 
 .detail {
-  height: 55lvh;
+  height: 55dvh;
+  padding: 1.25em 2em 1.75em 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &__title {
+    font-size: 1.125rem;
+    color: var.$clr-navy;
+    font-weight: var.$font-weight-semibold;
+  }
+
+  &__list {
+    padding-inline: 0;
+    padding: 1em 0;
+
+    > *:last-child {
+      margin: 0;
+    }
+  }
+
+  &__item {
+    list-style: none;
+    padding: 1.125em 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // background: var.$gradient-redtowhite;
+    border-radius: var.$border-radius-curved;
+    margin: 0 0 1em 0;
+
+    &--Reaction {
+      color: var.$clr-red;
+      background: var.$gradient-redtowhite;
+    }
+
+    &--Memory {
+      color: var.$clr-yellow;
+      background: var.$gradient-yellowtowhite;
+    }
+
+    &--Verbal {
+      color: var.$clr-green;
+      background: var.$gradient-greentowhite;
+    }
+
+    &--Visual {
+      color: var.$clr-blue;
+      background: var.$gradient-bluetowhite;
+    }
+  }
+
+  &__category {
+    &-group {
+      display: flex;
+      gap: 1em;
+    }
+
+    &-title {
+      font-weight: var.$font-weight-semibold;
+    }
+  }
+
+  &__result-group {
+    font-weight: var.$font-weight-semibold;
+  }
+
+  &__result-user {
+    color: var.$clr-navy-dark;
+  }
+
+  &__result-max {
+    color: var.$clr-navy-dark;
+    opacity: 0.5;
+  }
+
+  &__btn {
+    border: 0;
+    padding: 1em;
+    background: var.$clr-navy-dark;
+    color: var.$clr-white;
+    border-radius: 128px;
+    font-size: 1.125rem;
+    font-weight: var.$font-weight-semibold;
+
+    &:hover {
+      background: var.$gradient-purpletoblue;
+      cursor: pointer;
+      filter: drop-shadow(0px 30px 60px rgba(61, 108, 236, 0.15));
+    }
+  }
 }
+
+// @supports (height: 100svh) {
+
+// }

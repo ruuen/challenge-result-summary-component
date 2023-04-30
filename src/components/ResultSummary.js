@@ -34,10 +34,8 @@ export default function ResultSummary() {
     ],
   });
 
-  // This is jank but Netlify redirects are weird with the local dev CLI
-  // Point at prod while styling :) :) :)
   useEffect(() => {
-    fetch("https://rd-challenge-result-summary.netlify.app/api/userResults")
+    fetch("/api/userResults")
       .then((res) => res.json())
       .then((data) => setUserData(data))
       .catch((error) => console.log(error));

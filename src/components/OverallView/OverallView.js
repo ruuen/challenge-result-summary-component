@@ -4,7 +4,7 @@ export default function OverallView({ result, performance }) {
       <h1 className="overall__title">Your Result</h1>
       <div className="overall__result">
         <span className="overall__result-user">{result}</span>
-        <span className="overall__result-max"> of 100</span>
+        <span className="overall__result-max">of 100</span>
       </div>
       <div>
         <h2 className="overall__subtitle">Great</h2>

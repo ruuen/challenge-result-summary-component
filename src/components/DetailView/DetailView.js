@@ -1,4 +1,3 @@
-import "./DetailView.scss";
 import DetailItem from "./DetailItem/DetailItem";
 
 export default function DetailView({ detailData }) {

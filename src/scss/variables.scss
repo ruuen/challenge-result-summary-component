@@ -35,7 +35,8 @@ $clr-blue-light: #cac9ff;
 $clr-blue-vlight: #ecf2ff;
 $clr-green: #00bb8f;
 $clr-yellow: #ffb21e;
-$gradient-purpleblue: linear-gradient(180deg, #7755ff 0%, #6943ff 0.01%, #2f2ce9 100%);
+$gradient-purpletoblue: linear-gradient(180deg, #7755ff 0%, #6943ff 0.01%, #2f2ce9 100%);
+$gradient-dbluetoblue: linear-gradient(180deg, #4d21c9 0%, rgba(37, 33, 201, 0) 100%, rgba(37, 33, 201, 0) 100%);
 
 // Fonts
 $font-family: "Hanken Grotesk", sans-serif;

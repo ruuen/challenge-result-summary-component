@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import DetailView from "./DetailView/DetailView";
 import OverallView from "./OverallView/OverallView";
-import "./ResultSummary.scss";
 
 export default function ResultSummary() {
   const [userData, setUserData] = useState({

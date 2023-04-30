@@ -1,7 +1,60 @@
+@use "variables" as var;
+
 .overall {
   height: 45lvh;
-  padding: 1em;
-  //   background: var.;
+  padding: 1.5em 2em 2.5em 2em;
+  background: var.$gradient-purpletoblue;
+  border-radius: 0 0 30px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+
+  &__title {
+    font-size: 1.125rem;
+    color: var.$clr-blue-light;
+    margin: 0 0 0.5em 0;
+  }
+
+  &__subtitle {
+    color: var.$clr-white;
+    font-size: 1.5rem;
+    font-weight: var.$font-weight-semibold;
+    line-height: 32px;
+  }
+
+  &__body {
+    color: var.$clr-blue-light;
+    max-width: 70cqw;
+  }
+}
+
+.overall__result {
+  background: var.$gradient-dbluetoblue;
+  padding: 0.5em;
+  margin: 0 0 0.5em 0;
+
+  min-height: 50%;
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &-user {
+    font-size: 3.5rem;
+    color: var.$clr-white;
+    font-weight: var.$font-weight-bold;
+  }
+
+  &-max {
+    font-size: 1rem;
+    font-weight: var.$font-weight-semibold;
+    color: var.$clr-blue-light;
+    opacity: 0.5;
+  }
 }
 
 .detail {

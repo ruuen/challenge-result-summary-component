@@ -13,8 +13,9 @@
 html,
 body,
 #root,
-.page-container {
-  min-height: 100lvh;
+.page-container,
+.result-summary__wrapper {
+  height: 100svh;
 }
 
 body {

@@ -1,7 +1,7 @@
-import iconReaction from "../src/media/icons/icon-reaction.svg";
-import iconMemory from "../src/media/icons/icon-memory.svg";
-import iconVerbal from "../src/media/icons/icon-verbal.svg";
-import iconVisual from "../src/media/icons/icon-visual.svg";
+import iconReaction from "../media/icons/icon-reaction.svg";
+import iconMemory from "../media/icons/icon-memory.svg";
+import iconVerbal from "../media/icons/icon-verbal.svg";
+import iconVisual from "../media/icons/icon-visual.svg";
 
 const data = {
   "result": 76,
